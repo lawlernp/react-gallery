@@ -1,6 +1,15 @@
 import React, { Component } from 'react';
 
 class GalleryList extends Component {
+  
+  render(){
+    return(
+      <>
+      Hello
+      </>
+    )
+  }
+
   state = {
     GalleryItems : {},
     }
@@ -12,13 +21,12 @@ class GalleryList extends Component {
   }
 
   loadItems = () => {
-    this.props.imagesArray.map((image) => {
-        return this.setState ({
-            ...this.state.GalleryItems,
-            GalleryItems: image
-        })
-  
-    
+    console.log('in load items');
+  }
+
+
+
+}
 
 
 export default GalleryList

@@ -45,7 +45,6 @@ class App extends Component {
         <br/>
         <p>Gallery goes here</p>
         <GalleryList imagesArray = {this.imagesArray}/>
-        <img src="images/goat_small.jpg"/>
       </div>
     );
   }
