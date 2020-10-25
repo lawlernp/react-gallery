@@ -24,11 +24,11 @@ Link to software that is required to install the app (e.g. node).
 4. The `npm run client` command will open up a new browser tab for you!
 
 ## Usage
-How does someone use this application? Tell a user story here.
 
 1. Click on a picture to reveal the description
 2. Click on description to switch back to the image
 3. Click love it! button to add a like
+4. See how many times a picture has been liked displayed below the image
 
 ## Built With
  

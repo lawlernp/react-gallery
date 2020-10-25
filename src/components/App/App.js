@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import axios from 'axios';
+// importing GalleryList to use in render
 import GalleryList from '../GalleryList/GalleryList'
 
 class App extends Component {
@@ -10,14 +11,16 @@ class App extends Component {
     }
   
 
-
+  
   componentDidMount = () => {
     // console.log('app.js mounted');
     this.getImages();
   }
   
     getImages = () => {
+      //HTTP GET request using axios
     axios.get('/gallery').then((response) => {
+      //saving response (our array of image location and decription data objects) to state
         this.setState({
           imagesArray: response.data,
         })
@@ -36,6 +39,7 @@ class App extends Component {
           <h1 className="App-title">My Gallery</h1>
         </header>
         <br/>
+        {/* rendering GalleryList and passing galleryArray and getImages as props  */}
         <GalleryList galleryArray={this.state.imagesArray} getImages={this.getImages}/>
       </div>
     );
