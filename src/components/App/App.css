@@ -28,20 +28,19 @@
 
 .imageContainer {
   align-items: center auto;
-
+  display: inline-block;
+  margin-right: 2em;
+  margin-bottom: 1em;
+  margin-left: auto;
 }
-
 
 
 .image {
   text-align: center;
-  display: inline-block;
   height: 100px;
   width: 100px;
+  margin-left: auto;
   padding: 1em;
-  margin-right: 1em;
-  margin-bottom: 1em;
   border: 1px solid  black ;
   vertical-align:top;
-
 }
