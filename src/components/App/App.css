@@ -1,9 +1,10 @@
-/* .App {
+.App {
   text-align: center;
   display: inline-block;
 }
- */
+
 .App-header {
+  text-align: center;
   background-color: #222;
   height: 70px;
   padding: 20px;
@@ -23,7 +24,17 @@
   to { transform: rotate(360deg); }
 } */
 
+
+
+.imageContainer {
+  align-items: center auto;
+
+}
+
+
+
 .image {
+  text-align: center;
   display: inline-block;
   height: 100px;
   width: 100px;

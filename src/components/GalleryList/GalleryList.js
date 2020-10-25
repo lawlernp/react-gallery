@@ -23,10 +23,14 @@ class GalleryList extends Component {
   render(){
     return(
       <>
+      <div className='imageContainer'>
       {this.props.galleryArray.map((item) => {
         
-        return <GalleryItem item={item}/>
+        return <>
+        <GalleryItem item={item}/>
+        </>
       })}
+      </div>
       <br/>
       Hello
       </>

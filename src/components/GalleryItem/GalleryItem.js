@@ -7,7 +7,8 @@ class GalleryItem extends Component {
 
 
         state = {
-        showDesc: false
+        showDesc: false,
+        likes: this.props.item.likes
     }
 
     displayDesc = () => {
@@ -30,6 +31,8 @@ class GalleryItem extends Component {
                 :
                     <img src={this.props.item.path} width="100" height="100"/>
                 }
+                <button onClick={this.displayDesc}>LoveIt!</button>
+                <span>{this.state.likes}</span>
                 </div>          
 
             </>
