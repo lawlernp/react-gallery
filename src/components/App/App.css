@@ -1,15 +1,15 @@
-.App {
+/* .App {
   text-align: center;
   display: inline-block;
 }
-
+ */
 .App-header {
   background-color: #222;
   height: 70px;
   padding: 20px;
   color: white;
 }
-
+/* 
 .App-title {
   font-size: 1.5em;
 }
@@ -21,13 +21,16 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
-}
+} */
 
 .image {
   display: inline-block;
+  height: 100px;
+  width: 100px;
   padding: 1em;
   margin-right: 1em;
   margin-bottom: 1em;
   border: 1px solid  black ;
+  vertical-align:top;
 
 }
