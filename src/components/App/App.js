@@ -12,7 +12,7 @@ class App extends Component {
 
 
   componentDidMount = () => {
-    console.log('app.js mounted');
+    // console.log('app.js mounted');
     this.getImages();
   }
   
@@ -21,9 +21,10 @@ class App extends Component {
         this.setState({
           imagesArray: response.data,
         })
-        console.log(response.data);
+        // console.log(response.data);
       }).catch((error)=> {
         console.log(error);
+        alert('Oops. Try again later.')
     });
   }
 
