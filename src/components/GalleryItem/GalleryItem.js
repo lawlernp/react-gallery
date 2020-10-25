@@ -7,9 +7,8 @@ class GalleryItem extends Component {
 
     render() {
         return(
-            <div key={this.props.image.id}>
-                test
-                <img src={this.props.image.path}/>
+            <div className='image' key={this.props.image.id}> 
+                <img src={this.props.image.path} width="100" height="100"/>
             </div>
         )
     }

@@ -30,10 +30,8 @@ class GalleryList extends Component {
 
   loadItems = () => {
     console.log('in load items');
-    // this.setState({
-    //   GalleryItems : this.props.imagesArray.
-    // })
   }
+
   render(){
     return(
       <>
@@ -41,7 +39,7 @@ class GalleryList extends Component {
         
         return <GalleryItem image={image}/>
       })}
-      {JSON.stringify(this.state.GalleryItems)}
+      <br/>
       Hello
       </>
     )
